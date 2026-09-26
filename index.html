@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SoleMate — premium footwear for every step." />
+  <title>SoleMate | Walk Your Way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">Free shipping on orders over $75 <span>•</span> Easy 30-day returns</div>
+  <header class="site-header">
+    <a class="logo" href="#top">sole<span>mate</span><i>®</i></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a><a href="#shop">New arrivals</a><a href="#sale">Sale</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions"><button class="icon-btn" aria-label="Search" id="searchBtn">⌕</button><button class="icon-btn" aria-label="Open account">♙</button><button class="cart-btn" id="cartBtn">Bag <b id="cartCount">0</b></button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+  </header>
+  <div class="mobile-nav" id="mobileNav"><a href="#shop">Shop all</a><a href="#shop">New arrivals</a><a href="#sale">Sale</a><a href="#story">Our story</a></div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">The everyday collection</p><h1>Walk your<br /><em>way.</em></h1><p class="hero-text">Thoughtfully designed shoes that look good, feel better, and go everywhere you do.</p><a href="#shop" class="button dark">Shop the collection <span>→</span></a></div>
+      <div class="hero-art"><div class="hero-circle"></div><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Red SoleMate sneaker" /><div class="hero-note">01 / 04<br /><strong>Made for moving</strong></div></div>
+    </section>
+
+    <section class="trust-row"><div>✦ &nbsp; Comfort, always</div><div>◌ &nbsp; Thoughtful materials</div><div>↻ &nbsp; Easy returns</div><div>♡ &nbsp; Loved by 12k+</div></section>
+
+    <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">Find your pair</p><h2>Best sellers</h2></div><a href="#shop" class="under-link">View all shoes <span>→</span></a></div><div class="filter-row"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="sneakers">Sneakers</button><button class="filter" data-filter="loafers">Loafers</button><button class="filter" data-filter="sandals">Sandals</button><button class="filter" data-filter="boots">Boots</button></div><div class="product-grid" id="productGrid"></div></section>
+
+    <section class="feature" id="story"><div class="feature-image"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=85" alt="White sneaker detail" /></div><div class="feature-copy"><p class="eyebrow">Good for your feet. Good for the planet.</p><h2>Less shoe.<br /><em>More you.</em></h2><p>We make versatile footwear from considered materials, so you can buy less and live more. Every pair is designed in Brooklyn and made to move with you.</p><a href="#" class="under-link">Read our story <span>→</span></a></div></section>
+    <section class="sale-banner" id="sale"><div><p class="eyebrow">A little something extra</p><h2>Step into <em>summer.</em></h2></div><a href="#shop" class="button light">Shop sale <span>→</span></a></section>
+  </main>
+  <footer><div class="footer-top"><a class="logo" href="#top">sole<span>mate</span><i>®</i></a><p>Better shoes for better days.</p><div class="newsletter"><label for="email">Get 10% off your first order</label><div><input id="email" type="email" placeholder="Your email address" /><button id="subscribeBtn">→</button></div></div></div><div class="footer-bottom"><span>© 2024 SoleMate. All rights reserved.</span><span>Instagram &nbsp; Pinterest &nbsp; Contact</span></div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Your bag <span id="drawerCount">(0)</span></h2><button id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"><div class="empty-cart">Your bag is waiting for something good.</div></div><div class="cart-footer"><div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="button dark checkout" id="checkoutBtn">Checkout <span>→</span></button><small>Shipping and taxes calculated at checkout.</small></div></aside><div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast">Added to your bag ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
